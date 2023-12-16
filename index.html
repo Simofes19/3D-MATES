@@ -1,0 +1,179 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box {
+            width: 40%;
+            height: 40%;
+            margin: 20px;
+            border: 5px solid #FFFFFF;
+            color: white;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        .box h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .box p {
+            font-size: 24px;
+            margin: 10px;
+        }
+
+        .buddy {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #AE05CC;
+            border: 2px solid #AE05CC;
+            border-radius: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+		img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Aggiungi questo codice CSS per rendere le colonne responsive */
+        @media (max-width: 800px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+				
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+            }
+        }
+
+        /* Aggiungi questo codice CSS per lo stile del footer */
+        footer {
+            position: absolute; /* o relative */
+            bottom: -700;
+            width: 100%;
+            height: 200px;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Aggiungi questo codice CSS per lo stile dell'header */
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: #AE05CC; /* il colore che vuoi */
+            color: white; /* il colore del testo */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        header img {
+            width: 175px;
+            height: 80px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Aggiungi questo tag per l'header -->
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Chisiamo.html">Chi siamo</a></li>
+				
+				<li><a href="becomeamate.html">Diventa un Mate</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box">
+		<a href="costruzione.html">
+			<img src="1.png" alt="modeling" width="500" height="500">
+			</a>
+        </div>
+        <div class="box">
+         	<a href="costruzione.html">
+			<img src="2.png" alt="modeling" width="500" height="500">
+			</a>
+        </div>
+    </div>
+    <div class="buddy">Diventa Mate</div>
+    <!-- Aggiungi questo tag per il footer -->
+    <footer>
+        
+  <img src="logo2.png" alt="Logo" style="height: 90px;">
+  <ul style="list-style: none; margin: 0;">
+    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+	<li><a href="Chisiamo.html" style="color: white; text-decoration: none;">Chi siamo</a></li>
+
+    <li><a href="becomeamate.html" style="color: white; text-decoration: none;">Diventa un Mate</a></li>
+<hr align="right" size="10" width="30" color="000000" noshade />
+    <li><a href="Credits.html" style="color: white; text-decoration: none;">Credits</a></li>
+	<hr align="left" size="3" width="120" color="FFFFFF" noshade />
+	<p>© 2023 - Tutti i diritti riservati</p>
+	
+  </ul>
+
+    </footer>
+
+</body>
+</html>

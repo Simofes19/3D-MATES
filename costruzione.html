@@ -1,0 +1,161 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+		.container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .intro {
+            width: 40%;
+        }
+        .image {
+            width: 40%;
+            position: relative;
+			top: 0;
+			left: 300;
+        }
+        .team {
+            position: absolute;
+            top: 0;
+            left: -60;
+            font-size: 48px;
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+        }
+         /* Aggiungi questo codice CSS per rendere le colonne responsive */
+        @media (max-width: 800px) {
+            .container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 20px;
+				
+            }
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 20px;
+            }
+        }
+
+        /* Aggiungi questo codice CSS per lo stile del footer */
+        footer {
+            position: absolute; /* o relative */
+            bottom: -500;
+            width: 100%;
+            height: 50px;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Aggiungi questo codice CSS per lo stile dell'header */
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: #AE05CC; /* il colore che vuoi */
+            color: white; /* il colore del testo */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        header img {
+            width: 175px;
+            height: 80px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            font-weight: bold;
+        }
+
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 10px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Aggiungi questo tag per l'header -->
+    <header>
+        <img src="logo.png" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Chi siamo</a></li>
+				<li><a href="becomeamate.html">Diventa un Mate</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div class="container">
+        <div class="intro">
+            <h1>Questa sezione è in costruzione</h1>
+            <p>Ci scusiamo per il disagio</p>
+            <p>Hai una richiesta?</p>
+
+  <!-- Crea un link per inviare una mail con un oggetto e un testo predefiniti -->
+  <a href="mailto:indirizzo@email.com?subject=Oggetto%20della%20mail&body=Testo%20della%20mail">
+   <button style="background-color: #AE05CC; color: white; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;" onclick="window.location.href='IL TUO LINK QUI'">Scrivici una mail</button>
+  
+
+
+
+        </div>
+        <div class="image">
+            <img src="costruzione.jpg" alt="Il team" width="150%">
+        </div>
+    </div>
+    <footer>
+        
+  <img src="logo2.png" alt="Logo" style="height: 90px;">
+  <ul style="list-style: none; margin: 0;">
+    <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+	<li><a href="Chisiamo.html" style="color: white; text-decoration: none;">Chi siamo</a></li>
+
+    <li><a href="becomeamate.html" style="color: white; text-decoration: none;">Diventa un Mate</a></li>
+<hr align="right" size="10" width="30" color="000000" noshade />
+    <li><a href="Credits.html" style="color: white; text-decoration: none;">Credits</a></li>
+	<hr align="left" size="3" width="120" color="FFFFFF" noshade />
+	<p>© 2023 - Tutti i diritti riservati</p>
+	
+  </ul>
+
+    </footer>
+
+</body>
+</html>
