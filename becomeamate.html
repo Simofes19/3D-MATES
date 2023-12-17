@@ -1,4 +1,4 @@
-<<html>
+<html>
 <head>
     <style>
         body {
@@ -95,6 +95,47 @@
                 font-size: 18px; /* aumenta la dimensione del font del bottone */
             }
         }
+
+        /* Aggiungi questo codice CSS per spostare le impostazioni css nella sezione style */
+        h1 { /* seleziona tutti gli elementi h1 */
+            text-align: center; /* imposta l'allineamento del testo al centro */
+        }
+
+        p { /* seleziona tutti gli elementi p */
+            text-align: center; /* imposta l'allineamento del testo al centro */
+        }
+
+        hr { /* seleziona tutti gli elementi hr */
+            align: center; /* imposta l'allineamento al centro */
+            color: #FFFFFF; /* imposta il colore bianco */
+            noshade: true; /* rimuovi l'ombra */
+        }
+
+        .big-hr { /* definisci una classe per gli elementi hr grandi */
+            size: 35; /* imposta la dimensione a 35 */
+            width: 150; /* imposta la larghezza a 150 */
+        }
+
+        .small-hr { /* definisci una classe per gli elementi hr piccoli */
+            size: 10; /* imposta la dimensione a 10 */
+            width: 50; /* imposta la larghezza a 50 */
+        }
+
+        .big-p { /* definisci una classe per gli elementi p grandi */
+            font-size: 20px; /* imposta la dimensione del font a 20px */
+        }
+
+        .big-font { /* definisci una classe per gli elementi con font grande */
+            font-size: 5; /* imposta la dimensione del font a 5 */
+        }
+
+        .bold-font { /* definisci una classe per gli elementi con font grassetto */
+            font-weight: bold; /* imposta il peso del font a grassetto */
+        }
+
+        .comic-font { /* definisci una classe per gli elementi con font Comic Sans MS */
+            font-family: 'Comic Sans MS'; /* imposta la famiglia del font a Comic Sans MS */
+        }
     </style>
 </head>
 <body>
@@ -112,14 +153,14 @@
         </nav>
     </header>
 
-<h1 style="text-align: center;">Benvenuto su 3D Mates!</h1> <!-- aggiungi questa riga -->
-<hr align="center" size="10" width="50" color="FFFFFF" noshade />
-<p style="text-align: center;">3D MATES è una piattaforma che permette alle persone di ottenere parti personalizzate (e non) stampate in 3d grazie alla nostra community di designer/stampatori in 3D chiamati Mates</p> <!-- aggiungi questa riga -->
-<hr align="center" size="35" width="150" color="FFFFFF" noshade />
-<p style="text-align: center;font-size: 20px;">Sei un appassionato di stampa 3d e hai una stampante 3D?</p> <!-- aggiungi questa riga -->
-<hr align="center" size="10" width="50" color="FFFFFF" noshade />
+<h1>Benvenuto su 3D Mates!</h1> <!-- rimuovi lo stile inline -->
+<hr class="small-hr" /> <!-- aggiungi la classe small-hr -->
+<p>3D MATES è una piattaforma che permette alle persone di ottenere parti personalizzate (e non) stampate in 3d grazie alla nostra community di designer/stampatori in 3D chiamati Mates</p> <!-- rimuovi lo stile inline -->
+<hr class="big-hr" /> <!-- aggiungi la classe big-hr -->
+<p class="big-p">Sei un appassionato di stampa 3d e hai una stampante 3D?</p> <!-- aggiungi la classe big-p e rimuovi lo stile inline -->
+<hr class="small-hr" /> <!-- aggiungi la classe small-hr -->
 <div style="height:100px; line-height:100px; text-align:center; font-family:'Comic Sans MS'">
-  <span style="display:inline-block; vertical-align:middle;"><font size="5"><b>Entra a far parte della nostra community e inizia a guadagnare !!!</b></font></span>
+  <span style="display:inline-block; vertical-align:middle;"><font class="big-font bold-font">Entra a far parte della nostra community e inizia a guadagnare !!!</font></span> <!-- aggiungi le classi big-font e bold-font e rimuovi lo stile inline -->
 </div>
 
 
@@ -127,7 +168,7 @@
   <button style="background-color: #AE05CC; color: white; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;" onclick="window.location.href='becomeamate-fee.html'">Diventa un Mate</button>
 </div>
 
-  <footer>
+     <footer>
         
   <img src="logo2.png" alt="Logo" style="height: 90px;">
   <ul style="list-style: none; margin: 0;">
@@ -144,10 +185,6 @@
 
     </footer>
 
-</body>
-</html>
-
 
 </body>
 </html>
-
