@@ -71,7 +71,7 @@
         }
 
         /* Aggiungi questo codice CSS per usare le media queries */
-        @media (max-width: 800px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
+        @media (max-width: 600px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
             header h1 {
                 font-size: 28px; /* riduci la dimensione del font del titolo */
             }
@@ -91,8 +91,8 @@
 
             button { 
 		/* seleziona solo il bottone */
-		    position: relative; /* cambia da absolute a relative */
-            bottom: 0;
+		    position: absolute; /* cambia da absolute a relative */
+            bottom: 200;
                 padding: 40px 80px; /* aumenta il padding del bottone */
                 font-size: 25px; /* aumenta la dimensione del font del bottone */
             }
