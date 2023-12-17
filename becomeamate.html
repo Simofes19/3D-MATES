@@ -1,7 +1,7 @@
 <html>
 <head>
-	<title>Diventa un Mate</title>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-REMGDZZTVY"></script>
+	<title>Trova il PrintMate</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REMGDZZTVY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -10,33 +10,12 @@
   gtag('config', 'G-REMGDZZTVY');
 </script>
     <style>
-        body {
+       body {
             background-color: white;
             font-family: Arial, sans-serif;
         }
-        
-        /* Aggiungi questo codice CSS per lo stile del footer */
-          footer {
-            position: absolute; /* cambia da absolute a relative */
-            bottom: -200; /* cambia da -700 a 0 */
-            width: 100%;
-            height: 200px;
-            background-color: #000000;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            flex-wrap: wrap; /* aggiungi questa proprietà per permettere al footer di adattarsi alla larghezza dello schermo */
-        }
 
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Aggiungi questo codice CSS per lo stile dell'header */
-        header {
+header {
             width: 100%;
             height: 80px;
             background-color: #AE05CC; /* il colore che vuoi */
@@ -45,7 +24,6 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px;
-            flex-wrap: wrap; /* aggiungi questa proprietà per permettere all'header di adattarsi alla larghezza dello schermo */
         }
 
         header img {
@@ -54,7 +32,7 @@
         }
 
         header h1 {
-            font-size: 40px;
+            font-size: 36px;
             font-weight: bold;
         }
 
@@ -78,12 +56,41 @@
             color: white;
             text-decoration: none;
         }
-	    /* Aggiungi questo codice CSS per spostare le impostazioni css nella sezione style */
-        h1 { /* seleziona tutti gli elementi h1 */
-            text-align: center; /* imposta l'allineamento del testo al centro */
+
+
+footer {
+            position: relative; /* o relative */
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
         }
 
-        p { /* seleziona tutti gli elementi p */
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+		
+		
+
+        .intro {
+            width: 80%;
+            margin: 100px;
+			text-align: center;
+        }
+		
+		
+     div2 {
+    display: flex;
+    align-items: middle;
+    justify-content: center;
+  }
+
+   p { /* seleziona tutti gli elementi p */
             text-align: center; /* imposta l'allineamento del testo al centro */
         }
 
@@ -122,48 +129,89 @@
   background-color: #AE05CC;
   color: white;
   border: none;
-  padding: 15px 32px;
+  padding: 40px 64px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 32px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 18px;
 }
+ 
+ 
+  .box {
+      margin: auto;
+      width: 100%;
+      border: 3px white;
+      padding: 10px;
+      text-align: center;
+    }
+ 
+        /* Aggiungi queste regole per il mobile */
+        @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                height: auto;
+            }
 
-        /* Aggiungi questo codice CSS per usare le media queries */
-        @media screen and (max-width: 600px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
-            header h1 {
-                font-size: 28px; /* riduci la dimensione del font del titolo */
+            header img {
+                width: 100%;
+                height: auto;
+            }
+
+            header nav {
+                margin-top: 10px;
             }
 
             header nav ul {
-                flex-direction: column; /* cambia la direzione del menu da orizzontale a verticale */
+                flex-direction: column;
             }
 
             header nav ul li {
-                margin: 5px; /* riduci il margine degli elementi del menu */
+                margin: 5px;
             }
 
-            h1, p, div{ /* seleziona tutti gli elementi che vuoi ridimensionare */
-                width: 90%; /* imposta la larghezza al 90% della larghezza dello schermo */
-                margin: 10px auto; /* centra gli elementi e aggiungi un margine di 10px */
+            footer {
+                flex-direction: column;
+                height: auto;
             }
-            button { 
-		/* seleziona solo il bottone */
-		    margin-top: 150px;
-                padding: 60px 100px; /* aumenta il padding del bottone */
-                font-size: 35px; /* aumenta la dimensione del font del bottone */
-            	}
-		 }
-	
+
+            footer img {
+                width: 100%;
+                height: auto;
+            }
+
+            footer ul {
+                margin-top: 10px;
+            }
+
+            footer ul li {
+                margin: 5px;
+            }
+			.container {
+                flex-direction: column;
+            }
+
+            .intro {
+                width: 100%;
+            }
+			div2 {
+        display: block;
+        text-align: center;
+      }
+			/* Aumenta la dimensione del bottone */
+    button {
+      font-size: 24px;
+      padding: 40px 60px;
+    }
+
     </style>
 </head>
 <body>
     <!-- Aggiungi questo tag per l'header -->
     <header>
-        <a href="index.html">
+       <a href="index.html">
 			<img src="logo.png" alt="Logo">
 			</a>
         <nav>
@@ -174,23 +222,30 @@
             </ul>
         </nav>
     </header>
-
-<h1>Benvenuto su 3D Mates!</h1> <!-- rimuovi lo stile inline -->
+	<div class="container">
+            <img src="money.png" alt="Il team" width="100%">
+       
+        <div class="intro">
+            <h1>Benvenuto su 3D Mates!</h1> <!-- rimuovi lo stile inline -->
 <hr class="small-hr" /> <!-- aggiungi la classe small-hr -->
 <p>3D MATES è una piattaforma che permette alle persone di ottenere parti personalizzate (e non) stampate in 3d grazie alla nostra community di designer/stampatori in 3D chiamati Mates</p> <!-- rimuovi lo stile inline -->
 <hr class="big-hr" /> <!-- aggiungi la classe big-hr -->
 <p class="big-p">Sei un appassionato di stampa 3d e hai una stampante 3D?</p> <!-- aggiungi la classe big-p e rimuovi lo stile inline -->
 <hr class="small-hr" /> <!-- aggiungi la classe small-hr -->
 <div style="height:100px; line-height:100px; text-align:center; font-family:'Comic Sans MS'">
-  <span style="display:inline-block; vertical-align:middle;"><font class="big-font bold-font">Entra a far parte della nostra community e inizia a guadagnare !!!</font></span> <!-- aggiungi le classi big-font e bold-font e rimuovi lo stile inline -->
+  <span style="display:inline-block; vertical-align:middle;"><font size="5"><b>Entra a far parte della nostra community e inizia a guadagnare !!!</b></font></span>
 </div>
 
-<div style="text-align:center;">
+
+<div style="height:100px; line-height:100px; text-align:center;">
   <button onclick="window.location.href='becomeamate-fee.html'">Diventa un Mate</button>
 </div>
 
-
-     <footer>
+ 
+        
+        
+    </div>
+    <footer>
         
   <img src="logo2.png" alt="Logo" style="height: 90px;">
   <ul style="list-style: none; margin: 0;">
@@ -207,6 +262,6 @@
 
     </footer>
 
-
 </body>
 </html>
+
