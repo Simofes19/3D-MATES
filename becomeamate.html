@@ -8,8 +8,8 @@
         
         /* Aggiungi questo codice CSS per lo stile del footer */
           footer {
-            position: relative; /* cambia da absolute a relative */
-            bottom: 0; /* cambia da -700 a 0 */
+            position: absolute; /* cambia da absolute a relative */
+            bottom: -500; /* cambia da -700 a 0 */
             width: 100%;
             height: 200px;
             background-color: #000000;
@@ -73,7 +73,7 @@
         /* Aggiungi questo codice CSS per usare le media queries */
         @media (max-width: 600px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
             header h1 {
-                font-size: 24px; /* riduci la dimensione del font del titolo */
+                font-size: 28px; /* riduci la dimensione del font del titolo */
             }
 
             header nav ul {
@@ -84,7 +84,7 @@
                 margin: 5px; /* riduci il margine degli elementi del menu */
             }
 
-            h1, p, div, button { /* seleziona tutti gli elementi che vuoi ridimensionare */
+            h1, p, div { /* seleziona tutti gli elementi che vuoi ridimensionare */
                 width: 90%; /* imposta la larghezza al 90% della larghezza dello schermo */
                 margin: 10px auto; /* centra gli elementi e aggiungi un margine di 10px */
             }
