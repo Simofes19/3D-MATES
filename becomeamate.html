@@ -1,10 +1,10 @@
-<html>
+<<html>
 <head>
     <style>
         body {
             background-color: white;
             font-family: Arial, sans-serif;
-		min-height: calc(100vh - 280px); /* 100vh è l'altezza della finestra del browser, 280px è la somma delle altezze dell'header e del footer */
+            min-height: calc(100vh - 280px); /* aggiungi questa proprietà per mantenere il footer in basso */
         }
         
         /* Aggiungi questo codice CSS per lo stile del footer */
@@ -89,6 +89,11 @@
                 width: 90%; /* imposta la larghezza al 90% della larghezza dello schermo */
                 margin: 10px auto; /* centra gli elementi e aggiungi un margine di 10px */
             }
+
+            button { /* seleziona solo il bottone */
+                padding: 20px 40px; /* aumenta il padding del bottone */
+                font-size: 18px; /* aumenta la dimensione del font del bottone */
+            }
         }
     </style>
 </head>
@@ -122,7 +127,7 @@
   <button style="background-color: #AE05CC; color: white; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;" onclick="window.location.href='becomeamate-fee.html'">Diventa un Mate</button>
 </div>
 
-       <footer>
+  <footer>
         
   <img src="logo2.png" alt="Logo" style="height: 90px;">
   <ul style="list-style: none; margin: 0;">
@@ -138,6 +143,9 @@
   </ul>
 
     </footer>
+
+</body>
+</html>
 
 
 </body>
