@@ -109,6 +109,25 @@
         .comic-font { /* definisci una classe per gli elementi con font Comic Sans MS */
             font-family: 'Comic Sans MS'; /* imposta la famiglia del font a Comic Sans MS */
         }
+	    button {
+  background-color: #AE05CC;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: #9B04B8;
+  transform: scale(1.1);
+}
+
 
         /* Aggiungi questo codice CSS per usare le media queries */
         @media (max-width: 600px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
@@ -130,18 +149,11 @@
             }
             button { 
 		/* seleziona solo il bottone */
-		    position: relative; /* cambia da absolute a relative */
-            bottom: -100px; /* riduci il valore di bottom per spostare il bottone più in basso */
                 padding: 60px 100px; /* aumenta il padding del bottone */
                 font-size: 35px; /* aumenta la dimensione del font del bottone */
             }
 		 }
-
-
-       
-
-        
-		
+	
     </style>
 </head>
 <body>
@@ -170,8 +182,9 @@
 </div>
 
 <div style="text-align:center;">
-  <button style="background-color: #AE05CC; color: white; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;" onclick="window.location.href='becomeamate-fee.html'">Diventa un Mate</button>
+  <button onclick="window.location.href='becomeamate-fee.html'">Diventa un Mate</button>
 </div>
+
 
      <footer>
         
