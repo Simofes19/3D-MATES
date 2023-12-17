@@ -1,7 +1,7 @@
 <html>
 <head>
 	<title>Trova il PrintMate</title>
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-REMGDZZTVY"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-REMGDZZTVY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -10,74 +10,12 @@
   gtag('config', 'G-REMGDZZTVY');
 </script>
     <style>
-        body {
+       body {
             background-color: white;
             font-family: Arial, sans-serif;
         }
-		.container {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin: 20px;
-        }
-        .intro {
-            width: 40%;
-        }
-        .image {
-            width: 40%;
-            position: relative;
-			top: 0;
-			left: 300;
-        }
-        .team {
-            position: absolute;
-            top: 0;
-            left: -60;
-            font-size: 48px;
-            font-weight: bold;
-        }
-        ul {
-            list-style-type: none;
-        }
-         /* Aggiungi questo codice CSS per rendere le colonne responsive */
-        @media (max-width: 800px) {
-            .container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 20px;
-				
-            }
-        }
 
-        @media (max-width: 600px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 20px;
-            }
-        }
-
-        /* Aggiungi questo codice CSS per lo stile del footer */
-          footer {
-            position: absolute; /* o relative */
-            bottom: -700;
-            width: 100%;
-            height: 200px;
-            background-color: #000000;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Aggiungi questo codice CSS per lo stile dell'header */
-        header {
+header {
             width: 100%;
             height: 80px;
             background-color: #AE05CC; /* il colore che vuoi */
@@ -118,6 +56,129 @@
             color: white;
             text-decoration: none;
         }
+
+
+footer {
+            position: relative; /* o relative */
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+		
+		
+
+        .intro {
+            width: 80%;
+            margin: 100px;
+			text-align: center;
+        }
+		
+		
+     div2 {
+    display: flex;
+    align-items: middle;
+    justify-content: center;
+  }
+/* Stilizza il pulsante */
+
+ button {
+    background-color: #AE05CC;
+    color: white;
+    border: none;
+    padding: 30px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    vertical-align: middle;
+  }
+ 
+  
+
+  /* Stilizza l'icona di Instagram */
+  .fa-instagram {
+    font-size: 80px; /* Dimensione dell'icona */
+    color: #e4405f; /* Colore dell'icona rosa */
+  }
+  .box {
+      margin: auto;
+      width: 100%;
+      border: 3px white;
+      padding: 10px;
+      text-align: center;
+    }
+ 
+        /* Aggiungi queste regole per il mobile */
+        @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                height: auto;
+            }
+
+            header img {
+                width: 100%;
+                height: auto;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 5px;
+            }
+
+            footer {
+                flex-direction: column;
+                height: auto;
+            }
+
+            footer img {
+                width: 100%;
+                height: auto;
+            }
+
+            footer ul {
+                margin-top: 10px;
+            }
+
+            footer ul li {
+                margin: 5px;
+            }
+			.container {
+                flex-direction: column;
+            }
+
+            .intro {
+                width: 100%;
+            }
+			div2 {
+        display: block;
+        text-align: center;
+      }
+			/* Aumenta la dimensione del bottone */
+    button {
+      font-size: 24px;
+      padding: 20px 40px;
+    }
+
     </style>
 </head>
 <body>
@@ -135,10 +196,13 @@
         </nav>
     </header>
 	<div class="container">
+	<div class="image">
+            <img src="costruzione.jpg" alt="Il team" width="100%">
+        </div>
         <div class="intro">
-            <h1>Questa sezione è in costruzione</h1>
-            <p>Ci scusiamo per il disagio</p>
-            <p>Hai una richiesta?</p>
+            <h1 style="font-size: 60px;">Questa sezione è in costruzione</h1>
+            <p style="font-size: 30px;">Ci scusiamo per il disagio</p>
+            <p style="font-size: 30px;">Hai una richiesta?</p>
 
   <!-- Crea un link per inviare una mail con un oggetto e un testo predefiniti -->
   <a href="mailto:3dmates.mail@gmail.com?subject=RICHIESTA">
@@ -148,9 +212,7 @@
 
 
         </div>
-        <div class="image">
-            <img src="costruzione.jpg" alt="Il team" width="150%">
-        </div>
+        
     </div>
     <footer>
         
