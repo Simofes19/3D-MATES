@@ -5,28 +5,11 @@
             background-color: white;
             font-family: Arial, sans-serif;
         }
-         /* Aggiungi questo codice CSS per rendere le colonne responsive */
-        @media (max-width: 800px) {
-            .container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 20px;
-				
-            }
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 20px;
-            }
-        }
-
+        
         /* Aggiungi questo codice CSS per lo stile del footer */
           footer {
-            position: absolute; /* o relative */
-            bottom: -700;
+            position: relative; /* cambia da absolute a relative */
+            bottom: 0; /* cambia da -700 a 0 */
             width: 100%;
             height: 200px;
             background-color: #000000;
@@ -34,6 +17,7 @@
             display: flex;
             align-items: center;
             justify-content: space-around;
+            flex-wrap: wrap; /* aggiungi questa proprietà per permettere al footer di adattarsi alla larghezza dello schermo */
         }
 
 
@@ -52,6 +36,7 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px;
+            flex-wrap: wrap; /* aggiungi questa proprietà per permettere all'header di adattarsi alla larghezza dello schermo */
         }
 
         header img {
@@ -83,6 +68,26 @@
         header nav ul li a {
             color: white;
             text-decoration: none;
+        }
+
+        /* Aggiungi questo codice CSS per usare le media queries */
+        @media (max-width: 600px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
+            header h1 {
+                font-size: 24px; /* riduci la dimensione del font del titolo */
+            }
+
+            header nav ul {
+                flex-direction: column; /* cambia la direzione del menu da orizzontale a verticale */
+            }
+
+            header nav ul li {
+                margin: 5px; /* riduci il margine degli elementi del menu */
+            }
+
+            h1, p, div, button { /* seleziona tutti gli elementi che vuoi ridimensionare */
+                width: 90%; /* imposta la larghezza al 90% della larghezza dello schermo */
+                margin: 10px auto; /* centra gli elementi e aggiungi un margine di 10px */
+            }
         }
     </style>
 </head>
@@ -116,11 +121,7 @@
   <button style="background-color: #AE05CC; color: white; border: none; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; margin: 4px 2px; cursor: pointer; border-radius: 12px;" onclick="window.location.href='becomeamate-fee.html'">Diventa un Mate</button>
 </div>
 
-
-
-
-
-        <footer>
+       <footer>
         
   <img src="logo2.png" alt="Logo" style="height: 90px;">
   <ul style="list-style: none; margin: 0;">
@@ -140,3 +141,4 @@
 
 </body>
 </html>
+
