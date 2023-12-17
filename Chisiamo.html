@@ -1,6 +1,6 @@
 <html>
 <head>
-	<title>Chi siamo</title>
+<title>Chi siamo</title>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-REMGDZZTVY"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -8,74 +8,14 @@
   gtag('js', new Date());
 
   gtag('config', 'G-REMGDZZTVY');
-</script>
-    <style>
+  </script>
+	<style>
         body {
             background-color: white;
             font-family: Arial, sans-serif;
         }
-		.container {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            margin: 20px;
-        }
-        .intro {
-            width: 40%;
-        }
-        .image {
-            width: 40%;
-            position: relative;
-        }
-        .team {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-size: 48px;
-            font-weight: bold;
-        }
-        ul {
-            list-style-type: none;
-        }
-         /* Aggiungi questo codice CSS per rendere le colonne responsive */
-        @media (max-width: 800px) {
-            .container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 20px;
-				
-            }
-        }
 
-        @media (max-width: 600px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 20px;
-            }
-        }
-
-        /* Aggiungi questo codice CSS per lo stile del footer */
-          footer {
-            position: absolute; /* o relative */
-            bottom: -400;
-            width: 100%;
-            height: 200px;
-            background-color: #000000;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Aggiungi questo codice CSS per lo stile dell'header */
-        header {
+header {
             width: 100%;
             height: 80px;
             background-color: #AE05CC; /* il colore che vuoi */
@@ -116,9 +56,139 @@
             color: white;
             text-decoration: none;
         }
-    </style>
+
+
+footer {
+            position: relative; /* o relative */
+            bottom: 0;
+            width: 100%;
+            height: 200px;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+		
+		
+
+        .intro {
+            width: 80%;
+            margin: 100px;
+        }
+		
+		
+     div2 {
+    display: flex;
+    align-items: middle;
+    justify-content: center;
+  }
+/* Stilizza il pulsante */
+
+ button {
+    background-color: #AE05CC;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    vertical-align: middle;
+  }
+ 
+  
+
+  /* Stilizza l'icona di Instagram */
+  .fa-instagram {
+    font-size: 80px; /* Dimensione dell'icona */
+    color: #e4405f; /* Colore dell'icona rosa */
+  }
+  .box {
+      margin: auto;
+      width: 100%;
+      border: 3px white;
+      padding: 10px;
+      text-align: center;
+    }
+ 
+        /* Aggiungi queste regole per il mobile */
+        @media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                height: auto;
+            }
+
+            header img {
+                width: 100%;
+                height: auto;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 5px;
+            }
+
+            footer {
+                flex-direction: column;
+                height: auto;
+            }
+
+            footer img {
+                width: 100%;
+                height: auto;
+            }
+
+            footer ul {
+                margin-top: 10px;
+            }
+
+            footer ul li {
+                margin: 5px;
+            }
+			.container {
+                flex-direction: column;
+            }
+
+            .intro {
+                width: 100%;
+            }
+			div2 {
+        display: block;
+        text-align: center;
+      }
+			/* Aumenta la dimensione del bottone */
+    button {
+      font-size: 24px;
+      padding: 20px 40px;
+    }
+
+    /* Aumenta la dimensione dell'icona */
+    .fa-instagram {
+      font-size: 80px;
+    }
+  }
+        }
+  </style>
 </head>
+
 <body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Aggiungi questo tag per l'header -->
     <header>
         <a href="index.html">
@@ -132,70 +202,35 @@
             </ul>
         </nav>
     </header>
-	<div class="container">
-		<div class="image">
-            <img src="team.jpg" alt="Il team" width="100%">
-        </div>
+
+    <!-- Aggiungi questo tag per il body -->
+    <div class="container">
+        <img src="team.jpg" alt="Il team" style="width: 800px; height: 400px; margin: 20px auto; display: block;">
         <div class="intro">
-            <h1>Chi siamo</h1>
+		<h1>Chi siamo</h1>
             <p>3D MATES è un'idea di startup nata da 6 studenti del Politecnico di Milano ad ottobre 2023.</p>
             <p>La nostra missione è di rendere la stampa facilmente accessibile a tutti!</p>
-            <p>3D MATES è una piattaforma che ti permette di ottenere parti stampate in 3D personalizzate grazie alla nostra community di designer/stampatori chiamati Mate:</p>
+            <p>3D MATES è una piattaforma che ti permette ottenere parti stampate in 3D personalizzate grazie alla nostra community di designer/stampatori chiamati Mate:</p>
             <ul>
-                <li>- I DesignMATES ti aiuteranno ad ottenere il tuo modello su misura.</li>
-                <li>- I PrintMATES faranno apparire il tuo oggetto grazie alla loro stampante.</li>
+                <li> I DesignMATES vi aiuteranno ad ottenere il vostro modello su misura.</li>
+                <li> I PrintMATES faranno apparire il vostro oggetto grazie alla loro stampante.</li>
             </ul>
             <p>In questa fase embrionale DesignMATES e PrintMATES spesso coincideranno.</p>
             <p>Vuoi saperne di più? Vuoi rimanere aggiornato? Hai dei suggerimenti da darci? Contattaci!</p>
-<!-- Aggiungi la libreria di icone -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<style>
-  /* Crea un contenitore flessibile che centra i suoi elementi figli */
-  .p {
-    display: flex;
-    flex-direction: column; /* Imposta la direzione degli elementi da orizzontale a verticale */
-    align-items: center; /* Centra gli elementi lungo l'asse trasversale */
-    justify-content: center; /* Centra gli elementi lungo l'asse principale */
-  }
-
-  /* Stilizza il pulsante */
-  button {
-    background-color: #AE05CC;
-    color: white;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    vertical-align: ;
-  }
-
-  /* Stilizza l'icona di Instagram */
-  .fa-instagram {
-    font-size: 48px; /* Dimensione dell'icona */
-    color: #e4405f; /* Colore dell'icona rosa */
-  }
-</style>
-
-<div class="container">
+		</div>
+		</div>
+    <div class="box">
+	<div class="div2">
   <!-- Crea un link per inviare una mail con un oggetto e un testo predefiniti -->
-  <a href="mailto:3dmates.mail@gmail.com?subject=INFO">
+  <a href="mailto:indirizzo@email.com?subject=Oggetto%20della%20mail&body=Testo%20della%20mail">
     <button>Scrivici una mail</button> <!-- Crea un pulsante con il testo "Scrivici una mail" -->
   </a>
-  <p>Oppure</p> <!-- Crea un paragrafo con il testo "Oppure" -->
-  <!-- Crea un link per aprire il profilo Instagram di 3dmates_official -->
-  <a href="https://www.instagram.com/3dmates_official/" class="fa fa-instagram"></a>
+</div>
+<hr align="center" size="10" width="100" color="FFFFFF" noshade />
 </div>
 
 
-        </div>
-    </div>
-    <footer>
+ <footer>
         
   <img src="logo2.png" alt="Logo" style="height: 90px;">
   <ul style="list-style: none; margin: 0;">
