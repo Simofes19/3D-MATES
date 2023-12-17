@@ -45,7 +45,7 @@
         }
 
         header h1 {
-            font-size: 36px;
+            font-size: 40px;
             font-weight: bold;
         }
 
@@ -69,40 +69,7 @@
             color: white;
             text-decoration: none;
         }
-
-        /* Aggiungi questo codice CSS per usare le media queries */
-        @media (max-width: 600px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
-            header h1 {
-                font-size: 28px; /* riduci la dimensione del font del titolo */
-            }
-
-            header nav ul {
-                flex-direction: column; /* cambia la direzione del menu da orizzontale a verticale */
-            }
-
-            header nav ul li {
-                margin: 5px; /* riduci il margine degli elementi del menu */
-            }
-
-            h1, p, div { /* seleziona tutti gli elementi che vuoi ridimensionare */
-                width: 90%; /* imposta la larghezza al 90% della larghezza dello schermo */
-                margin: 10px auto; /* centra gli elementi e aggiungi un margine di 10px */
-            }
-
-           
-          
-            button { 
-		/* seleziona solo il bottone */
-		    position: relative; /* cambia da absolute a relative */
-            bottom: 20px; /* riduci il valore di bottom per spostare il bottone più in basso */
-                padding: 60px 100px; /* aumenta il padding del bottone */
-                font-size: 35px; /* aumenta la dimensione del font del bottone */
-            }
-
-
-       
-
-        /* Aggiungi questo codice CSS per spostare le impostazioni css nella sezione style */
+	    /* Aggiungi questo codice CSS per spostare le impostazioni css nella sezione style */
         h1 { /* seleziona tutti gli elementi h1 */
             text-align: center; /* imposta l'allineamento del testo al centro */
         }
@@ -142,7 +109,42 @@
         .comic-font { /* definisci una classe per gli elementi con font Comic Sans MS */
             font-family: 'Comic Sans MS'; /* imposta la famiglia del font a Comic Sans MS */
         }
+
+        /* Aggiungi questo codice CSS per usare le media queries */
+        @media (max-width: 600px) { /* definisci un punto di interruzione per gli schermi con larghezza massima di 600px */
+            header h1 {
+                font-size: 28px; /* riduci la dimensione del font del titolo */
+            }
+
+            header nav ul {
+                flex-direction: column; /* cambia la direzione del menu da orizzontale a verticale */
+            }
+
+            header nav ul li {
+                margin: 5px; /* riduci il margine degli elementi del menu */
+            }
+
+            h1, p, div { /* seleziona tutti gli elementi che vuoi ridimensionare */
+                width: 90%; /* imposta la larghezza al 90% della larghezza dello schermo */
+                margin: 10px auto; /* centra gli elementi e aggiungi un margine di 10px */
+            }
+
+           
+          
+            button { 
+		/* seleziona solo il bottone */
+		    position: relative; /* cambia da absolute a relative */
+            bottom: 20px; /* riduci il valore di bottom per spostare il bottone più in basso */
+                padding: 60px 100px; /* aumenta il padding del bottone */
+                font-size: 35px; /* aumenta la dimensione del font del bottone */
+            }
 		 }
+
+
+       
+
+        
+		
     </style>
 </head>
 <body>
