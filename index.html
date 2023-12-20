@@ -29,90 +29,13 @@ _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"floatingPreferenc
             font-family: Arial, sans-serif;
         }
 
-        .container {
-            display: flex;
-            height: 100vh;
-            align-items: center;
-            justify-content: center;
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
         }
 
-        .box {
-            width: 40%;
-            height: 40%;
-            margin: 20px;
-            border: 5px solid #FFFFFF;
-            color: white;
-            background-color: #FFFFFF;
-            text-align: center;
-        }
-
-        .box h1 {
-            font-size: 36px;
-            font-weight: bold;
-            margin-top: 20px;
-        }
-
-        .box p {
-            font-size: 24px;
-            margin: 10px;
-        }
-
-        .buddy {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            color: #AE05CC;
-            border: 2px solid #AE05CC;
-            border-radius: 5px;
-            padding: 5px 10px;
-            cursor: pointer;
-        }
-		img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        /* Aggiungi questo codice CSS per rendere le colonne responsive */
-        @media (max-width: 800px) {
-            .container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-gap: 20px;
-				
-            }
-        }
-
-        @media (max-width: 600px) {
-            .container {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 20px;
-            }
-        }
-
-        /* Aggiungi questo codice CSS per lo stile del footer */
-        footer {
-            position: absolute; /* o relative */
-            bottom: -500;
-            width: 100%;
-            height: 205px;
-            background-color: #000000;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-        }
-
-        footer a {
-            color: white;
-            text-decoration: none;
-        }
-
-        /* Aggiungi questo codice CSS per lo stile dell'header */
-        header {
-            width: 100%;
+header {
+            width: 99%;
             height: 80px;
             background-color: #AE05CC; /* il colore che vuoi */
             color: white; /* il colore del testo */
@@ -152,6 +75,79 @@ _iub.csConfiguration = {"askConsentAtCookiePolicyUpdate":true,"floatingPreferenc
             color: white;
             text-decoration: none;
         }
+
+
+footer {
+            position: absolute; /* o relative */
+            bottom: -500;
+            width: 99%;
+            height: 205px;
+            background-color: #000000;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+	
+    img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 600px) {
+            header {
+                flex-direction: column;
+                height: auto;
+            }
+
+            header img {
+                width: 100%;
+                height: auto;
+            }
+
+            header nav {
+                margin-top: 10px;
+            }
+
+            header nav ul {
+                flex-direction: column;
+            }
+
+            header nav ul li {
+                margin: 5px;
+            }
+
+            footer {
+                flex-direction: column;
+                height: auto;
+            }
+
+            footer img {
+                width: 100%;
+                height: auto;
+            }
+
+            footer ul {
+                margin-top: 10px;
+            }
+
+            footer ul li {
+                margin: 5px;
+            }
+			 div {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
+		
+    
     </style>
 </head>
 <body>
@@ -173,25 +169,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="box">
-		<a href="TrovaPrintMate.html">
-			<img src="1.png" alt="modeling" width="500" height="500">
+	<hr align="center" size="25" width="120" color="FFFFFF" noshade />
+		<img src="come funziona.png" alt="Immagine in alto" width="90%">
+		<hr align="center" size="30" width="120" color="FFFFFF" noshade />
+<div style="display: flex; justify-content: center;">
+  <a href="TrovaPrintMate.html">
+			<img src="1.png" alt="modeling" width="60%">
 			</a>
-        </div>
-        <div class="box">
-         	<a href="TrovaDesignMate.html">
-			<img src="2.png" alt="modeling" width="500" height="500">
+  <a href="TrovaDesignMate.html">
+			<img src="2.png" alt="modeling" width="60%" >
 			</a>
-        </div>
-    </div>
-    <div class="buddy">Diventa Mate</div>
+</div>
+		
+		
+		
     <!-- Aggiungi questo tag per il footer -->
     <footer>
         
   <img src="logo2.png" alt="Logo" style="height: 90px;">
 	    
-	    <ul style="list-style: none; margin: 0;">
+	    <ul style="list-style: none; margin: 25;">
     <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
 	<li><a href="Chisiamo.html" style="color: white; text-decoration: none;">Chi siamo</a></li>
 
